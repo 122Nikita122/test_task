@@ -1,38 +1,125 @@
+input {
+  outline: none;
+}
 .App {
-  text-align: center;
+  min-width: 700px;
+  padding: 20px;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.string_block {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  cursor: pointer;
+  border-bottom: 1px solid grey;
+}
+.string_block:active {
+  background-color: yellow;
+}
+.string {
+  padding: 10px;
+  flex: 1 50px;
+}
+.string:nth-of-type(2) {
+  flex: 2 100px;
+}
+.string:nth-of-type(3) {
+  flex: 2 100px;
+}
+.string:nth-of-type(4) {
+  flex: 2 200px;
+}
+.string:nth-of-type(5) {
+  flex: 2 200px;
+}
+.head {
+  background: yellow;
+}
+.input_block {
+  display: flex;
+  flex-wrap: wrap;
+}
+.ferstpage {
+  display: flex;
+  justify-content: space-evenly;
+  padding-top: 300px;
+}
+.ferstpage_button {
+  padding: 15px;
+  background-color: #eee;
+  border: 1px solid rgba(27, 31, 35, 0.15);
+  border-radius: 6px;
+  cursor: pointer;
+}
+.ferstpage_button:active {
+  background: rgb(122, 121, 121);
   color: white;
+  outline: none;
 }
-
-.App-link {
-  color: #61dafb;
+.button {
+  padding: 5px;
+  background-color: #eee;
+  border: 1px solid rgba(27, 31, 35, 0.15);
+  border-radius: 3px;
+  cursor: pointer;
+  margin-bottom: 10px;
+  margin-right: 10px;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.button:active {
+  outline: none;
+}
+.button:focus {
+  outline: none;
+}
+input {
+  padding: 5px;
+  background-color: #eee;
+  border: 1px solid rgba(27, 31, 35, 0.15);
+  border-radius: 3px;
+  margin-bottom: 10px;
+  margin-right: 10px;
+}
+.heading {
+  text-align: start;
+  border: none;
+  background: yellow;
+  padding: 0;
+}
+.arrow_asc {
+  margin-left: 3px;
+  margin-top: 3px;
+  border: 6px solid transparent;
+  border-top: 10px solid black;
+  transition: 0.5s;
+}
+.arrow_desc {
+  margin-left: 3px;
+  margin-top: -3px;
+  border: 6px solid transparent;
+  border-bottom: 10px solid black;
+  transition: 0.5s ease-out;
+}
+.row {
+  display: flex;
+  cursor: pointer;
+}
+.row:active {
+  outline: none;
+}
+.row:focus {
+  outline: none;
+}
+.info {
+  margin: 20px 0 20px 0;
+  padding: 10px;
+  background-color: rgb(221, 220, 220);
+}
+.info p {
+  border-bottom: 1px solid gray;
+}
+.info textarea {
+  height: 100px;
+  width: 300px;
+}
+.pagination {
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 10px;
 }
