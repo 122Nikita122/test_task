@@ -49,7 +49,7 @@ export function App(props) {
     return "Loading...";
   }
   if (data === "Err") {
-    return "Что-то пошло не так, поробуйте перезагрузить страницe";
+    return "Что-то пошло не так, поробуйте перезагрузить страницу";
   }
   const totalPages = Math.ceil(data.length / PERSONS_PER_PAGE);
 
@@ -165,7 +165,7 @@ export function App(props) {
         )}
         {page < totalPages - 1 && (
           <button className="button" onClick={() => changeForvord()}>
-            В перед
+            Вперед
           </button>
         )}
       </div>
